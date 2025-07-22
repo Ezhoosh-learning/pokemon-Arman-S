@@ -62,9 +62,9 @@ const Pokemoncart = ({ id }) => {
   return (
     <>
       {isLoading ? (
-        <span>loading</span>
+        <div></div>
       ) : error ? (
-        <span>error at {id}</span>
+        console.log("error :", id)
       ) : data ? (
         <>
           <div
@@ -76,7 +76,7 @@ const Pokemoncart = ({ id }) => {
             }}
           >
             <div className="absolute size-full m-[-2px] z-40">
-              <div className="relative size-full rounded-[10px] overflow-hidden transition-all duration-500 ease-out before:content-[''] before:absolute before:top-[-50%] before:left-[-50%] before:h-[200%] before:w-[200%] before:bg-linear-0 before:from-transparent/5 before:via-transparent/30 before:from-10% before:via-30% before:to-90% before:to-lightwhite/20 before:rotate-[-60deg] before:transition-all before:duration-[400ms] before:ease-out before:opacity-0 hover:before:opacity-100 hover:before:rotate-[-45deg] hover:before:translate-y-[100%]"></div>
+              <div className="relative size-full rounded-[10px] overflow-hidden transition-all duration-500 ease-in-out before:ease-in-out before:content-[''] before:absolute before:top-[-50%] before:left-[-50%] before:h-[200%] before:w-[200%] before:bg-linear-to-t before:from-transparent/5 before:via-transparent/30 before:from-10% before:via-30% before:to-90% before:to-ghost/90 before:rotate-[-60deg] before:transition-all before:duration-[500ms]  before:opacity-0 hover:before:opacity-100 hover:before:rotate-[-45deg] hover:before:translate-y-[100%]"></div>
             </div>
             <div className="w-full h-full z-10 rounded-[10px] bg-bgcart flex flex-col justify-around items-center relative py-2">
               <div
