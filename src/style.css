@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --color-fire: #ffa73d;
+  --color-grass: #8feb90;
+  --color-electric: #fae83f;
+  --color-water: #70ffea;
+  --color-ground: #a9a9a9;
+  --color-rock: #a5e52b;
+  --color-fairy: #a9a9a9;
+  --color-poison: #a5e52b;
+  --color-bug: #94ecbe;
+  --color-dragon: #ffa73d;
+  --color-psychic: #7c7db6;
+  --color-flying: #fcca46;
+  --color-fighting: #a9a9a9;
+  --color-normal: #d3d3d3;
+  --color-ice: #00f2f2;
+  --color-dark: #4f7ecf;
+  --color-ghost: #7685a7;
+  --color-steel: #808080;
+  --color-bgcart: #292828;
+  --color-bgmain: #141316;
+  --color-lightwhite: #f1f1f1;
+
+  --font-lato: "Lato", "sans-serif";
+}
