@@ -8,9 +8,9 @@ function App() {
   }
   return (
     <>
-      <div className="w-full bg-bgmain flex flex-col items-center gap-8 py-10">
+      <div className="w-full bg-bgmain flex flex-col items-center gap-10 py-10">
         <Header />
-        <div className="container mx-auto flex flex-wrap justify-center gap-x-10 gap-y-7">
+        <div className="container mx-auto flex flex-wrap justify-center gap-x-10 xl:gap-x-12 gap-y-7 xl:gap-y-8">
           {list}
         </div>
       </div>

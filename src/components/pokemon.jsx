@@ -68,7 +68,7 @@ const Pokemoncart = ({ id }) => {
       ) : data ? (
         <>
           <div
-            className="sm:w-48 w-44 sm:h-80 h-72 rounded-[10px] p-0.5 z-0 relative hover:scale-[1.01] hover:shadow hover:shadow-lightwhite transition-all"
+            className="sm:w-48 w-44 lg:w-52 xl:w-56 sm:h-80 h-72 lg:h-[350px] xl:h-[370px] rounded-[10px] p-0.5 z-0 relative hover:scale-[1.01] hover:shadow hover:shadow-lightwhite transition-all"
             style={{
               background: `linear-gradient(135deg, ${typetocolor(0)} 45% , ${
                 typetocolor(1) || typetocolor(0)
@@ -83,35 +83,41 @@ const Pokemoncart = ({ id }) => {
                 className="absolute top-0 left-0 rounded-tl-[6px] rounded-br-[6px] px-0.5"
                 style={{ backgroundColor: `${typetocolor(0)}` }}
               >
-                <p className=" text-[12px]">{getTagNumber()}</p>
+                <p className=" text-[12px] 2xl:text-sm">{getTagNumber()}</p>
               </div>
-              <div className="rounded-[100px] size-36 sm:size-40 p-6 flex justify-center items-center bg-linear-to-b from-neutral-600 to-bgcart shadow-2xl shadow-neutral-800">
+              <div className="rounded-[100px] size-36 sm:size-40 lg:size-44 2xl:size-[180px] p-6 flex justify-center items-center bg-linear-to-b from-neutral-600 to-bgcart shadow-[0_0_10px_10px_rgba(202,201,201,0.05)]">
                 <img
                   className="size-full"
                   src={pokemonImgUrl}
                   alt={`${data.name}-img`}
                 />
               </div>
-              <p className="text-lightwhite text-lg font-lato font-semibold">
+              <p className="text-lightwhite text-lg 2xl:text-xl font-lato font-semibold">
                 {data.name}
               </p>
               <div className="flex gap-5">
                 <div className="flex flex-col justify-center items-center gap-0.5">
-                  <p className="text-sm font-lato text-lightwhite/50">weight</p>
-                  <p className="text-lightwhite text-sm font-lato font-semibold">
+                  <p className="text-sm xl:text-[16px] font-lato text-lightwhite/50">
+                    weight
+                  </p>
+                  <p className="text-lightwhite text-sm xl:text-[16px] font-lato font-semibold">
                     {data.weight / 10} kg
                   </p>
                 </div>
                 <div className="flex flex-col justify-center items-center gap-0.5">
-                  <p className="text-sm font-lato text-lightwhite/50">height</p>
-                  <p className="text-lightwhite text-sm font-lato font-semibold">
+                  <p className="text-sm font-lato xl:text-[16px] text-lightwhite/50">
+                    height
+                  </p>
+                  <p className="text-lightwhite xl:text-[16px] text-sm font-lato font-semibold">
                     {data.height / 10} m
                   </p>
                 </div>
               </div>
               <div className="flex justify-center items-center">
-                <p className="font-lato text-sm text-lightwhite/50">type: </p>
-                <p className="font-lato text-sm font-bold text-lightwhite">
+                <p className="font-lato text-sm xl:text-[16px] text-lightwhite/50">
+                  type:{" "}
+                </p>
+                <p className="font-lato text-sm xl:text-[16px] font-bold text-lightwhite">
                   {getPokemonType()}
                 </p>
               </div>
