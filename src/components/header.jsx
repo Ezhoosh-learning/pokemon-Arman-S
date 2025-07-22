@@ -1,4 +1,4 @@
-import { pokemonHeaderImg } from "../assets/header.png";
+import pokemonHeaderImg from "../assets/header.png";
 
 const Header = () => {
   return (
